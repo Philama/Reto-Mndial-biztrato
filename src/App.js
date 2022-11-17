@@ -1,6 +1,16 @@
+import logo from './logo.svg';
+import './App.css';
+
 function App() {
   return (
-    <h2> Biztrato grupo 24</h2>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' index element={<ActividadScreen />} />
+          <Route path='actividades' element={<ActividadScreen />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
     
 }
