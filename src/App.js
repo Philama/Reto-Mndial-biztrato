@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ActividadScreen from './pages/Actividad/actividadScreen';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       </BrowserRouter>
     </div>
   );
+    
 }
 
 export default App;
