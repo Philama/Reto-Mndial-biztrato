@@ -1,6 +1,19 @@
 import './Styles/actividades.css';
+import { useState, useEffect } from 'react';
+import { getTeamMatches } from '../../services/apiServices';
 
 const ActividadScreen = () => {
+  const [matches, setMatches] = useState([]);
+
+  const getData = async () => {
+    const response = await getTeamMatches('758');
+    setMatches(response);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+  console.log(matches);
   return (
     <main className='container-fluid flex-grow-1 align-items-center justify-content-center position-relative vh-100 overflow-hidden'>
       <div className='rotate45'></div>
