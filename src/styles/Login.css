@@ -117,12 +117,12 @@ body {
 }
 
 .btn {
-    width: 80%;
+    width: 60%;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     background-color: var(--button-bg);
     cursor: pointer;
 }
