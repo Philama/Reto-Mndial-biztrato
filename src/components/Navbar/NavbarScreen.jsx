@@ -44,7 +44,7 @@ const NavbarScreen = () => {
                   className={`${
                     click === 1 ? 'active nav-link py-0 rounded-pill px-4' : ''
                   } nav-link py-0 rounded-pill px-4`}
-                  to='estadisticas'
+                  to='/estadisticas'
                 >
                   Estad&iacute;sticas
                 </Link>
@@ -55,7 +55,7 @@ const NavbarScreen = () => {
                   className={`${
                     click === 2 ? 'active nav-link py-0 rounded-pill px-4' : ''
                   } nav-link py-0 rounded-pill px-4`}
-                  to='actividades'
+                  to='/actividades'
                 >
                   Actividad
                 </Link>
@@ -66,7 +66,7 @@ const NavbarScreen = () => {
                   className={`${
                     click === 3 ? 'active nav-link py-0 rounded-pill px-4' : ''
                   } nav-link py-0 rounded-pill px-4`}
-                  to='contacto'
+                  to='/contacto'
                 >
                   Contacto
                 </Link>

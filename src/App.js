@@ -1,18 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider } from '@chakra-ui/react'
+import AppRouter from './router/AppRouter';
+
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' index element={<ActividadScreen />} />
-          <Route path='actividades' element={<ActividadScreen />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <ChakraProvider>
+      <AppRouter />
+    </ChakraProvider>
   );
-    
 }
 
 export default App;
